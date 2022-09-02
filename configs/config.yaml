@@ -1,0 +1,31 @@
+project:
+  name: kratos-pp-layout
+  mode: dev
+  version: v1
+server:
+  http:
+    addr: 0.0.0.0:8000
+    timeout: 1s
+  grpc:
+    addr: 0.0.0.0:9000
+    timeout: 1s
+data:
+  database:
+    driver: mysql
+    source: ""
+  redis:
+    addr: 127.0.0.1:6379
+    read_timeout: 0.2s
+    write_timeout: 0.2s
+  nacos:
+    ip: 192.168.173.81
+    port: 8848
+    dataId: kratos-pp-layout
+    group:  kratos-pp-layout
+    namespaceId: 39f3973b-b6df-4d93-a776-870bd2127d37
+    timeoutMs: 10000
+    logDir: ./
+  project:
+    name: kratos-pp-layout
+    mode: dev
+    version: v1
